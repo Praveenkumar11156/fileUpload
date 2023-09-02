@@ -1,0 +1,193 @@
+.person-details {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  max-width: 600px; /* Set a maximum width to prevent excessive stretching on larger screens */
+  padding: 20px;
+  margin-top: 10%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column; /* Change to column on smaller screens for better readability */
+  align-items: flex-start;
+}
+
+.input-field label {
+  width: 100%; /* Make the label full width on small screens */
+  margin-bottom: 5px; /* Add some spacing between label and input */
+  text-align: left; /* Align label text to the left */
+}
+
+.input-field input {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (min-width: 576px) {
+  /* Apply these styles when the screen width is 576px or larger (small devices like mobiles in landscape mode) */
+  .person-details {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Apply these styles when the screen width is 768px or larger (tablets) */
+  .person-details {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Apply these styles when the screen width is 992px or larger (desktops) */
+  .person-details {
+    width: 50%;
+  }
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Upload files  */
+.file-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for file input and upload button */
+.file-input {
+  display: block;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.upload-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for uploaded files */
+.uploaded-files {
+  margin-bottom: 10px;
+}
+
+.download-link {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Styles for buttons */
+.buttons {
+  text-align: center;
+}
+
+.view-profile-btn,
+.back-btn,
+.submit-btn,
+.logout-btn {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-profile-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.view-profile-btn:hover {
+  background-color: #218838;
+}
+
+.back-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #e0a800;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
